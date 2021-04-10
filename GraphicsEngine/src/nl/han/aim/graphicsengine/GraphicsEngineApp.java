@@ -33,6 +33,7 @@ public class GraphicsEngineApp extends PApplet {
         for (WeergaveObject wo : weergaveLijst) {
             // Alleen zichtbare figuren
             if (wo.isZichtbaar()) {
+                wo.doeStap();
                 wo.geefWeer(this, 0, 0);
             }
         }
