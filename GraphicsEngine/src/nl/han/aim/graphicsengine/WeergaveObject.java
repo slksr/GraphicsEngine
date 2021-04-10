@@ -23,25 +23,36 @@ public abstract class WeergaveObject {
     }
 
     public void doeStap() {
-
+        vx += ax;
+        vy += ay;
+        x += vx;
+        y += vy;
     }
 
     public abstract void geefWeer(GraphicsEngineApp app, float startX, float startY);
 
     public abstract boolean isMuisBinnen(int muisX, int muisY);
 
+    /** Er heeft een muisklik plaatsgevonden. Als dit binnen een figuur is voeg dan de acties uit in de toegevoegde Reageerders */
     public void geefMousePressedGebeurtenis(int mouseX, int mouseY) {
-
+        if (isMuisBinnen(mouseX, mouseY)) {
+            behandelMousePressedGebeurtenis();
+        }
     }
 
+    /** Voer de acties uit in de toegevoegde Reageerders */
     public void behandelMousePressedGebeurtenis() {
-
+        for (IReageerder r : reageerdersLijst) {
+            r.doeActie();
+        }
     }
 
+    /** Voeg een implementatie toe van IReageerder */
     public void voegReageerderToe(IReageerder reageerder) {
         reageerdersLijst.add(reageerder);
     }
 
+    /** Verwijder een implementatie van IReageerder */
     public void verwijderReageerder(IReageerder reageerder) {
         reageerdersLijst.remove(reageerder);
     }
