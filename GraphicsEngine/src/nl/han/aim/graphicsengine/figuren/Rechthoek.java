@@ -1,6 +1,9 @@
-package nl.han.aim.graphicsengine;
+package nl.han.aim.graphicsengine.figuren;
 
-public class Rechthoek extends Figuur{
+import nl.han.aim.graphicsengine.GraphicsEngineApp;
+import nl.han.aim.graphicsengine.engine.Figuur;
+
+public class Rechthoek extends Figuur {
     public Rechthoek(float x, float y, float vx, float vy, float ax, float ay, float breedte, float hoogte, boolean isZichtbaar, int vulKleur) {
         super(x, y, vx, vy, ax, ay, breedte, hoogte, isZichtbaar, vulKleur);
     }

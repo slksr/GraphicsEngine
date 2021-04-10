@@ -1,4 +1,6 @@
-package nl.han.aim.graphicsengine;
+package nl.han.aim.graphicsengine.engine;
+
+import nl.han.aim.graphicsengine.engine.WeergaveObject;
 
 public abstract class Figuur extends WeergaveObject {
     private int vulKleur;

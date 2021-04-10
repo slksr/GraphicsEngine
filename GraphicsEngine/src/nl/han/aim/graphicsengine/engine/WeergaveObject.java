@@ -1,4 +1,7 @@
-package nl.han.aim.graphicsengine;
+package nl.han.aim.graphicsengine.engine;
+
+import nl.han.aim.graphicsengine.GraphicsEngineApp;
+import nl.han.aim.graphicsengine.engine.IReageerder;
 
 import java.util.ArrayList;
 

@@ -13,9 +13,15 @@ Deze branch bevat de laatste versie van de applicatie
 ### Voorbereiding branch:
 Project opgezet aan de hand van het Klassendiagram
 
-### 2_rechthoek_plaatsen
+### 2_rechthoek_plaatsen branch:
 Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan HalloReageerder.
 
-### 3_rechthoek_beweging
-De rechthoek verplaatsen in het window. 
-Het Klassendiagram van deel 1 [GraphicsEngine](GraphicsEngine/ontw/GraphicsEngine_1.pdf)
+### 3_rechthoek_beweging branch:
+- De rechthoek verplaatsen in het window. 
+- Het Klassendiagram van deel 1 [GraphicsEngine](GraphicsEngine/ontw/GraphicsEngine_1.pdf)
+
+### 4_weergave_container branch:
+- Refactor klassenstructuur
+- Implementatie van WeergaveObjectContainer
+- 2 nieuwe rechthoeken
+
