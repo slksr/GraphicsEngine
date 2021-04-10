@@ -13,3 +13,6 @@ Deze branch bevat de laatste versie van de applicatie
 ### Voorbereiding branch:
 Project opgezet aan de hand van het Klassendiagram
 
+### 2_rechthoek_plaatsen
+Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan HalloReageerder.
+

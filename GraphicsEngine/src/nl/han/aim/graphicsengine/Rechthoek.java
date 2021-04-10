@@ -7,11 +7,14 @@ public class Rechthoek extends Figuur{
 
     @Override
     public void geefWeer(GraphicsEngineApp app, float startX, float startY) {
-
+        int vulkleur = this.getVulKleur();
+        app.fill(vulkleur);
+        app.stroke(vulkleur);
+        app.rect(startX + this.getX(), startY + this.getY(), this.getBreedte(), this.getHoogte());
     }
 
     @Override
     public boolean isMuisBinnen(int muisX, int muisY) {
-        return false;
+        return (muisX > this.getX() && muisX <= this.getX() + this.getBreedte() && muisY > this.getY() && muisY <= this.getY() + this.getHoogte());
     }
 }
