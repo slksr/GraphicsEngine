@@ -16,3 +16,6 @@ Project opgezet aan de hand van het Klassendiagram
 ### 2_rechthoek_plaatsen
 Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan HalloReageerder.
 
+### 3_rechthoek_beweging
+De rechthoek verplaatsen in het window. 
+Het Klassendiagram van deel 1 [GraphicsEngine](GraphicsEngine/ontw/GraphicsEngine_1.pdf)
