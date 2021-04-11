@@ -4,12 +4,12 @@ import nl.han.aim.graphicsengine.GraphicsEngineApp;
 import nl.han.aim.graphicsengine.engine.Figuur;
 
 public class Rechthoek extends Figuur {
-    public Rechthoek(float x, float y, float vx, float vy, float ax, float ay, float breedte, float hoogte, boolean isZichtbaar, int vulKleur) {
-        super(x, y, vx, vy, ax, ay, breedte, hoogte, isZichtbaar, vulKleur);
+    public Rechthoek(GraphicsEngineApp app, float x, float y, float vx, float vy, float ax, float ay, float breedte, float hoogte, boolean isZichtbaar, int vulKleur) {
+        super(app, x, y, vx, vy, ax, ay, breedte, hoogte, isZichtbaar, vulKleur);
     }
 
     @Override
-    public void geefWeer(GraphicsEngineApp app, float startX, float startY) {
+    public void geefWeer(float startX, float startY) {
         int vulkleur = this.getVulKleur();
         app.fill(vulkleur);
         app.stroke(vulkleur);
