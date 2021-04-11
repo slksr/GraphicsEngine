@@ -7,6 +7,7 @@ import nl.han.aim.graphicsengine.reageerders.HalloReageerder;
 import nl.han.aim.graphicsengine.reageerders.KleurReageerder;
 import nl.han.aim.graphicsengine.reageerders.SnelheidReageerder;
 import processing.core.PApplet;
+import processing.event.KeyEvent;
 
 import java.util.ArrayList;
 
@@ -71,4 +72,15 @@ public class GraphicsEngineApp extends PApplet {
             }
         }
     }
+
+    @Override
+    public void keyPressed(KeyEvent event) {
+        super.keyPressed(event);
+        for (WeergaveObject wo : weergaveLijst) {
+            if (wo.isZichtbaar()) {
+                wo.behandelArrowKeyPressedGebeurtenis(event.getKeyCode());
+            }
+        }
+    }
+
 }

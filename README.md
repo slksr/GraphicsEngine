@@ -37,4 +37,9 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 ### 7_BoundingBox branch:
 - Bounding Box in de WeergaveObjectContainer.
 
+### 8_just_halloreageerder
+- Algemene gebeurtenis alleen voor Hallo Reageerder verwerkt.
+- KeyPress event (Processing) voor Control toetsen en spatiebalk.
+- IReageerder aangepast om KeyPress af te handelen.
+- Gebruik van een enum.
 
