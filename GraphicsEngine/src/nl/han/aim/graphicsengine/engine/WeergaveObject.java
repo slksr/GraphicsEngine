@@ -1,7 +1,5 @@
 package nl.han.aim.graphicsengine.engine;
 
-import nl.han.aim.graphicsengine.GraphicsEngineApp;
-import nl.han.aim.graphicsengine.engine.IReageerder;
 
 import java.util.ArrayList;
 
@@ -32,7 +30,7 @@ public abstract class WeergaveObject {
         y += vy;
     }
 
-    public abstract void geefWeer(GraphicsEngineApp app, float startX, float startY);
+    public abstract void geefWeer(float startX, float startY);
 
     public abstract boolean isMuisBinnen(int muisX, int muisY);
 

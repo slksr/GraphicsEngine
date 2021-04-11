@@ -6,9 +6,11 @@ import java.util.ArrayList;
 
 public class WeergaveObjectContainer extends WeergaveObject {
     private ArrayList<WeergaveObject> container = new ArrayList<>();
+    private GraphicsEngineApp app;
 
-    public WeergaveObjectContainer(float x, float y, float vx, float vy, float ax, float ay, float breedte, float hoogte, boolean isZichtbaar) {
+    public WeergaveObjectContainer(GraphicsEngineApp app, float x, float y, float vx, float vy, float ax, float ay, float breedte, float hoogte, boolean isZichtbaar) {
         super(x, y, vx, vy, ax, ay, breedte, hoogte, isZichtbaar);
+        this.app = app;
     }
 
     public void toevoegen(WeergaveObject weergaveObject) {
@@ -20,9 +22,9 @@ public class WeergaveObjectContainer extends WeergaveObject {
     }
 
     @Override
-    public void geefWeer(GraphicsEngineApp app, float startX, float startY) {
+    public void geefWeer(float startX, float startY) {
         for (WeergaveObject wo : container) {
-            wo.geefWeer(app, startX + this.getX(), startY + this.getY());
+            wo.geefWeer(startX + this.getX(), startY + this.getY());
         }
     }
 
@@ -39,6 +41,15 @@ public class WeergaveObjectContainer extends WeergaveObject {
             wo.doeStap();
         }
         zetCorrecteHoogteEnBreedte();
+    }
+
+    public void behandelMousePressedGebeurtenis() {
+        super.behandelMousePressedGebeurtenis();
+        for (WeergaveObject wo : container) {
+            if (wo.isMuisBinnen(Math.round(app.mouseX - getX()), Math.round(app.mouseY - getY())) && wo.isZichtbaar()) {
+                wo.behandelMousePressedGebeurtenis();
+            }
+        }
     }
 
     private void zetCorrecteHoogteEnBreedte() {
