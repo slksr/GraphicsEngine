@@ -29,9 +29,12 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 - Aanpassing van de interface IReageerder.
 - Muisklik op HalloReageerder zorgt nu voor een versnelling.
 
-### 6_Reageerders_Refactoring branch:
+### 6_reageerders_refactoring branch:
 - Toevoegen Reageerders Kleur en Snelheid refactoring.
 - Refactoring geefWeer(..) in WeergaveObject, geen link meer met GraphicsEngineApp.
-- Container en Figuur referentie naar GraphicsEngineApp
+- Container en Figuur referentie naar GraphicsEngineApp.
+
+### 7_BoundingBox branch:
+- Bounding Box in de WeergaveObjectContainer.
 
 
