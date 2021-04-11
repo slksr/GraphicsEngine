@@ -48,6 +48,15 @@ public abstract class WeergaveObject {
         }
     }
 
+    public void behandelArrowKeyPressedGebeurtenis(int keyCode) {
+        GameKey gameKey = GameKey.valueOf(keyCode);
+        if (gameKey != null) {
+            for (IReageerder r : reageerdersLijst) {
+                r.doeKeyActie(this, gameKey);
+            }
+        }
+    }
+
     /** Voeg een implementatie toe van IReageerder */
     public void voegReageerderToe(IReageerder reageerder) {
         reageerdersLijst.add(reageerder);

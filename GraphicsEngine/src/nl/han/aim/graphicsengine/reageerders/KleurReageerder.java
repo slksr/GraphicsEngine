@@ -1,6 +1,7 @@
 package nl.han.aim.graphicsengine.reageerders;
 
 import nl.han.aim.graphicsengine.engine.Figuur;
+import nl.han.aim.graphicsengine.engine.GameKey;
 import nl.han.aim.graphicsengine.engine.IReageerder;
 import nl.han.aim.graphicsengine.engine.WeergaveObject;
 
@@ -23,5 +24,10 @@ public class KleurReageerder implements IReageerder {
             ((Figuur)weergaveObject).setVulKleur(c.getRGB());
         }
         System.out.println("KleurReageerder ik heb de kleurstelling r, g, b:\t" + c.toString());
+    }
+
+    @Override
+    public void doeKeyActie(WeergaveObject weergaveObject, GameKey gameKey) {
+        // nog geen implementatie van deze reageerder bepaald
     }
 }

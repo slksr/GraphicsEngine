@@ -11,4 +11,8 @@ public class SnelheidReageerder implements IReageerder {
         System.out.println("SnelheidsReageerder mijn snelheid is:\n\tHorizontaal: " + weergaveObject.getVx() + "\n\tVerticaal: " + weergaveObject.getVy());
     }
 
+    @Override
+    public void doeKeyActie(WeergaveObject weergaveObject, GameKey gameKey) {
+        // nog geen implementatie van deze reageerder bepaald
+    }
 }
