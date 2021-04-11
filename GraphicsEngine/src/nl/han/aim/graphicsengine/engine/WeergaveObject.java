@@ -46,7 +46,7 @@ public abstract class WeergaveObject {
     /** Voer de acties uit in de toegevoegde Reageerders */
     public void behandelMousePressedGebeurtenis() {
         for (IReageerder r : reageerdersLijst) {
-            r.doeActie();
+            r.doeActie(this);
         }
     }
 
