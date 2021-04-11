@@ -25,3 +25,6 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 - Implementatie van WeergaveObjectContainer
 - 2 nieuwe rechthoeken
 
+### 5_aanpassing_interface branch:
+- Aanpassing van de interface IReageerder.
+- Muisklik op HalloReageerder zorgt nu voor een versnelling.
