@@ -26,6 +26,7 @@ public class WeergaveObjectContainer extends WeergaveObject {
         for (WeergaveObject wo : container) {
             wo.geefWeer(startX + this.getX(), startY + this.getY());
         }
+        tekenBoundingBox();
     }
 
     @Override
@@ -67,6 +68,16 @@ public class WeergaveObjectContainer extends WeergaveObject {
         }
         this.setBreedte(hoogsteX - getX());
         this.setHoogte(hoogsteY - getY());
+    }
+
+    /**
+     * De breedte en de hoogte kunnen bepaald worden door de breedte en een hoogte van een rechthoek dat precies alle kinderen omsluit.
+     * Deze rechthoek wordt de bounding box genoemd van de WeergaveObjectContainer
+     * */
+    private void tekenBoundingBox() {
+        app.stroke(0xFFFFFFFF);
+        app.fill(0x55FFFFFF);
+        app.rect(getX(), getY(), getBreedte(), getHoogte());
     }
 }
 
