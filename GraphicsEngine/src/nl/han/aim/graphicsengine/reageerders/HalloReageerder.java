@@ -39,7 +39,6 @@ public class HalloReageerder implements IReageerder {
 
     /** Object mag alleen verticaal of horizontaal worden verplaatst met de toetsen */
     private void stuurObject(WeergaveObject wo, float speedX, float speedY) {
-        setHorizontalSpeedIfZero(wo);
         if (speedX == 0 && speedY == 0) {
             wo.setX(0);
             wo.setY(0);

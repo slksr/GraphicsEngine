@@ -15,7 +15,6 @@ public enum GameKey {
     private static Map map = new HashMap<>();
 
     GameKey(int value) {
-
         this.value = value;
     }
 
