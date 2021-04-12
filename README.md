@@ -43,3 +43,6 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 - IReageerder aangepast om KeyPress af te handelen.
 - Gebruik van een enum.
 
+### 9_codereview_cleanup branch:
+- cleanup van code en commentaar toegevoegd.
+- aanpassing na codereview.
