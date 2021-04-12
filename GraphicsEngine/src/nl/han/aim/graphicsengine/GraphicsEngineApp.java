@@ -2,6 +2,7 @@ package nl.han.aim.graphicsengine;
 
 import nl.han.aim.graphicsengine.engine.WeergaveObject;
 import nl.han.aim.graphicsengine.engine.WeergaveObjectContainer;
+import nl.han.aim.graphicsengine.figuren.Cirkel;
 import nl.han.aim.graphicsengine.figuren.Rechthoek;
 import nl.han.aim.graphicsengine.reageerders.HalloReageerder;
 import nl.han.aim.graphicsengine.reageerders.KleurReageerder;
@@ -41,9 +42,13 @@ public class GraphicsEngineApp extends PApplet {
         rechthoekKleur.voegReageerderToe(new KleurReageerder());
         rechthoekKleur.voegReageerderToe(snelheidReageerder);
 
+        Cirkel cirkel = new Cirkel(this,175, 50, 0.5f, 0, 0f, 0, 50, 50, true, 0xFFFFFFAE);
+        cirkel.voegReageerderToe(snelheidReageerder);
+
         // Figuren toevoegen aan container
         container.toevoegen(rechthoekAzure);
         container.toevoegen(rechthoekKleur);
+        container.toevoegen(cirkel);
 
         // interne lijst van WeergaveObjecten bijwerken
         weergaveLijst.add(rechthoekZwart);
