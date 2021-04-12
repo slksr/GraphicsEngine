@@ -49,3 +49,7 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 
 ### 10_uml_diagrammen branch:
 - Klassediagram en WeergaveObjectContainer SD diagram na branch 9.
+
+### 11_extra_cirkel branch:
+- nieuw figuur Cirkel toegevoegd.
+- Laatste branch.
