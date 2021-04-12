@@ -46,3 +46,6 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 ### 9_codereview_cleanup branch:
 - cleanup van code en commentaar toegevoegd.
 - aanpassing na codereview.
+
+### 10_uml_diagrammen branch:
+- Klassediagram en WeergaveObjectContainer SD diagram na branch 9.
