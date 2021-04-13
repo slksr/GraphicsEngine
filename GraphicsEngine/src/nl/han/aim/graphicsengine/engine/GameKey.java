@@ -9,13 +9,20 @@ public enum GameKey {
     UP(38),
     RIGHT(39),
     DOWN(40),
-    SPACE(32);
+    SPACE(32),
+    M(77, "Muziek");
 
     private int value;
+    private String description;
     private static Map map = new HashMap<>();
 
     GameKey(int value) {
+        this(value, "");
+    }
+
+    GameKey(int value, String description) {
         this.value = value;
+        this.description = description;
     }
 
     static {
@@ -26,6 +33,10 @@ public enum GameKey {
 
     public int getValue() {
         return value;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public static GameKey valueOf(int keyValue) {

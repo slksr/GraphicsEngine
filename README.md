@@ -52,4 +52,9 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 
 ### 11_extra_cirkel branch:
 - nieuw figuur Cirkel toegevoegd.
+  
+### 12_extra_muziek_reageerder branch:
+- muziek toegevoegd aan de applicatie als Reageerder.
+- implementatie van een final klasse.
+- mp3 soundtrack en minim libraries voor afspelen muziek via Processing 
 - Laatste branch.

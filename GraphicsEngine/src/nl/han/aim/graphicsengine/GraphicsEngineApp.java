@@ -1,11 +1,13 @@
 package nl.han.aim.graphicsengine;
 
+import nl.han.aim.graphicsengine.engine.Geluid;
 import nl.han.aim.graphicsengine.engine.WeergaveObject;
 import nl.han.aim.graphicsengine.engine.WeergaveObjectContainer;
 import nl.han.aim.graphicsengine.figuren.Cirkel;
 import nl.han.aim.graphicsengine.figuren.Rechthoek;
 import nl.han.aim.graphicsengine.reageerders.HalloReageerder;
 import nl.han.aim.graphicsengine.reageerders.KleurReageerder;
+import nl.han.aim.graphicsengine.reageerders.MuziekReageerder;
 import nl.han.aim.graphicsengine.reageerders.SnelheidReageerder;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
@@ -33,6 +35,10 @@ public class GraphicsEngineApp extends PApplet {
         // Figuren maken en Reageerders toekennen
         Rechthoek rechthoekZwart = new Rechthoek(this,10, 10, 0.5f, 0, 0,0, 50, 50, true, 0);
         rechthoekZwart.voegReageerderToe(new HalloReageerder());
+
+        // Muziek toevoegen
+        MuziekReageerder muziekReageerder = new MuziekReageerder(new Geluid(this,"nl/han/aim/graphicsengine/media/alexander-nakarada-banjos-unite.mp3"));
+        rechthoekZwart.voegReageerderToe(muziekReageerder);
 
         Rechthoek rechthoekAzure = new Rechthoek(this,0, 0, 0.0f, 0.1f, 0f, 0, 30, 70, true, 0xFF007FFF);
         SnelheidReageerder snelheidReageerder = new SnelheidReageerder();
@@ -87,5 +93,4 @@ public class GraphicsEngineApp extends PApplet {
             }
         }
     }
-
 }
