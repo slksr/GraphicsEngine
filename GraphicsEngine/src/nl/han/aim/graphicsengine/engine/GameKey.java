@@ -35,6 +35,10 @@ public enum GameKey {
         return value;
     }
 
+    /**
+     * De omschrijving van de enum.
+     * @return
+     */
     public String getDescription() {
         return description;
     }
