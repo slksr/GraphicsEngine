@@ -8,10 +8,10 @@ Deze applicatie is gebouwd met IntelliJ en maakt gebruik van Processing 3 core l
 De code is onderverdeeld in diverse branches zodat je de stappen kunt volgen.
 
 ### Main branch:
-Deze branch bevat de laatste versie van de applicatie
+Deze branch bevat de laatste **_werkende versie_** van de applicatie.
 
 ### Voorbereiding branch:
-Project opgezet aan de hand van het Klassendiagram
+Project opgezet aan de hand van het klassendiagram.
 
 ### 2_rechthoek_plaatsen branch:
 Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan HalloReageerder.
@@ -48,7 +48,8 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 - aanpassing na codereview.
 
 ### 10_uml_diagrammen branch:
-- Klassediagram en WeergaveObjectContainer SD diagram na branch 9.
+- Klassediagram [GraphicsEngine](GraphicsEngine/ontw/GraphicsEngine.pdf).
+- WeergaveObjectContainer [SD diagram](GraphicsEngine/ontw/GraphicsEngine SD.pdf) na branch 9
 
 ### 11_extra_cirkel branch:
 - nieuw figuur Cirkel toegevoegd.
@@ -58,6 +59,3 @@ Implemenatie van methoden en Rechthoek plaatsen in het window en koppelen aan Ha
 - implementatie van een final klasse.
 - mp3 soundtrack en minim libraries voor afspelen muziek via Processing 
 - Laatste branch.
-
-### test branch:
-tijdens de les.....
