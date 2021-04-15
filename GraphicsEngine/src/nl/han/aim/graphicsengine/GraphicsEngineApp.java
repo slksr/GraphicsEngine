@@ -78,7 +78,7 @@ public class GraphicsEngineApp extends PApplet {
     @Override
     public void mousePressed() {
         for (WeergaveObject wo : weergaveLijst) {
-            if (wo.isMuisBinnen(this.mouseX, this.mouseY) && wo.isZichtbaar()) {
+            if (wo.isZichtbaar() && wo.isMuisBinnen(this.mouseX, this.mouseY)) {
                 wo.behandelMousePressedGebeurtenis();
             }
         }
